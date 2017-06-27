@@ -1,0 +1,17 @@
+from sys import argv
+
+script, username = argv
+prompt= '>'
+
+print "Hi %s. I am %s." % (username, script)
+print "I want to ask some questions."
+print "Do you like me %s?" % username
+like = raw_input(prompt)
+
+print "Where do you live?"
+live = raw_input(prompt)
+
+print """ 
+So you %r about liking me and you live in %r.
+""" % (like, live)
+
